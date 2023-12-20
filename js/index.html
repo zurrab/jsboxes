@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+
+    <script>
+        var elementi = document.getElementsByClassName('box');
+
+        var colors = ["blue", "red", "yellow", "green", "pink"];
+
+        for (let i = 0; i < elementi.length; i++) {
+            elementi[i].style.backgroundColor = colors[i];
+            elementi[i].style.height = "200px";
+            elementi[i].style.width = "200px";
+            elementi[i].style.display = "inline-block"; 
+            elementi[i].innerText = i + 1;
+        }
+    </script>
+
+</body>
+</html>
